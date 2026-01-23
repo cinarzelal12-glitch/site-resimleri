@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Özçınar Yapı & İnşaat - Kentsel Dönüşüm ve Restorasyon Uzmanı</title>
+    <meta name="description" content="2002'den beri İstanbul'da kentsel dönüşüm, rezidans projeleri ve tarihi bina restorasyonu alanında uzman Özçınar Yapı. Geleceği yeşil ve güvenle inşa ediyoruz." />
+    <meta name="keywords" content="özçınar yapı, özçınar inşaat, kentsel dönüşüm, inşaat firması istanbul, tarihi eser restorasyonu, müteahhitlik hizmetleri, yeşil inşaat" />
+    <meta name="author" content="Özçınar İnşaat" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.ozcinarinsaat.com" />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.ozcinarinsaat.com/" />
+    <meta property="og:title" content="Özçınar Yapı & İnşaat - Profesyonel İnşaat Çözümleri" />
+    <meta property="og:description" content="Kentsel dönüşüm ve restorasyonda İstanbul'un güvenilir markası. Projelerimizi inceleyin." />
+    <meta property="og:image" content="https://www.ozcinarinsaat.com/logo.png" />
+    <meta property="og:locale" content="tr_TR" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/logo.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#18283e", // Lacivert (Kurumsal)
+              "primary-dark": "#0f1a29",
+              "accent": "#5d7d38", // Logodaki Yeşil Tonu
+              "accent-hover": "#4a632d",
+              "surface": "#F9FAFB",
+            },
+            fontFamily: {
+              "display": ["Manrope", "sans-serif"]
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(15px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      body {
+        font-family: 'Manrope', sans-serif;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #5d7d38;
+        border-radius: 10px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white text-[#131416] antialiased">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
