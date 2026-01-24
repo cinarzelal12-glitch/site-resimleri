@@ -1,8 +1,23 @@
 
-import React from 'react';
-import { ALL_PROJECTS } from '../constants';
+import React, { useState } from 'react';
+import { ALL_PROJECTS, Project } from '../constants';
+import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
 
 const AllProjectsPage: React.FC = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 300); // Wait for animation
+  };
+
   return (
     <div className="bg-surface min-h-screen">
       {/* Header Section */}
@@ -17,24 +32,21 @@ const AllProjectsPage: React.FC = () => {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {ALL_PROJECTS.map((project) => (
-            <article 
-              key={project.id} 
-              className="group bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col"
-            >
-              {/* Image Container */}
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <div className="absolute inset-0 bg-primary/10 group-hover:bg-primary/0 transition-all z-10 duration-500"></div>
-                <img 
-                  src={project.image} 
-                  alt="Özçınar İnşaat Projesi"
-                  loading="lazy"
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                />
-              </div>
-            </article>
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={handleProjectClick}
+              className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+            />
           ))}
         </div>
       </div>
+
+      <ProjectModal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        project={selectedProject}
+      />
     </div>
   );
 };

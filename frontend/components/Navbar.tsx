@@ -23,31 +23,30 @@ const Navbar: React.FC<NavbarProps> = ({ onQuoteClick, onNavigate }) => {
     e.preventDefault();
     const sectionId = link.href.startsWith('#') ? link.href.substring(1) : link.href;
     const page = link.page as 'home' | 'projects';
-    
+
     onNavigate(page, sectionId);
     setIsMobileMenuOpen(false);
   };
 
   return (
-    <header 
-      className={`sticky top-0 z-50 w-full transition-all duration-500 ${
-        isScrolled || isMobileMenuOpen
-          ? 'bg-white/98 backdrop-blur-md border-b border-gray-100 shadow-md py-2' 
+    <header
+      className={`sticky top-0 z-50 w-full transition-all duration-500 ${isScrolled || isMobileMenuOpen
+          ? 'bg-white/98 backdrop-blur-md border-b border-gray-100 shadow-md py-2'
           : 'bg-white border-b border-transparent py-4'
-      }`}
+        }`}
     >
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          
+
           {/* Logo Section */}
-          <div 
-            className="flex items-center gap-4 cursor-pointer group shrink-0" 
+          <div
+            className="flex items-center gap-4 cursor-pointer group shrink-0"
             onClick={(e) => handleNavClick(e, { page: 'home', href: '#home' })}
           >
             <div className="relative overflow-hidden h-14 w-14 sm:h-16 sm:w-16 flex items-center justify-center">
-              <img 
-                src="https://raw.githubusercontent.com/cinarzelal12-glitch/site-resimleri/main/logo.png" 
-                alt="Özçınar Yapı Logo" 
+              <img
+                src="/imagines/logo.png"
+                alt="Özçınar Yapı Logo"
                 className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-110"
                 onError={(e) => {
                   // Fallback if the URL fails
@@ -68,8 +67,8 @@ const Navbar: React.FC<NavbarProps> = ({ onQuoteClick, onNavigate }) => {
           {/* Desktop Nav */}
           <nav className="hidden lg:flex gap-10">
             {NAV_LINKS.map((link) => (
-              <a 
-                key={link.name} 
+              <a
+                key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link)}
                 className="text-[15px] font-bold text-gray-600 hover:text-accent transition-all relative group"
@@ -82,15 +81,15 @@ const Navbar: React.FC<NavbarProps> = ({ onQuoteClick, onNavigate }) => {
 
           {/* CTA & Mobile Toggle */}
           <div className="flex items-center gap-5">
-            <button 
+            <button
               onClick={onQuoteClick}
               className="bg-accent hover:bg-accent-hover text-white text-[14px] font-black py-3 px-8 rounded-full transition-all duration-300 transform hover:translate-y-[-2px] shadow-lg shadow-accent/20 hidden sm:flex items-center gap-2"
             >
               TEKLİF AL
               <span className="material-symbols-outlined text-[18px]">arrow_outward</span>
             </button>
-            
-            <button 
+
+            <button
               className="lg:hidden text-primary p-2 hover:bg-gray-100 rounded-xl transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Menüyü Aç"
@@ -108,8 +107,8 @@ const Navbar: React.FC<NavbarProps> = ({ onQuoteClick, onNavigate }) => {
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-2xl animate-fade-in-up">
           <div className="px-6 py-10 space-y-6 flex flex-col items-center">
             {NAV_LINKS.map((link) => (
-              <a 
-                key={link.name} 
+              <a
+                key={link.name}
                 href={link.href}
                 className="text-2xl font-black text-primary hover:text-accent transition-colors w-full text-center"
                 onClick={(e) => handleNavClick(e, link)}
@@ -118,7 +117,7 @@ const Navbar: React.FC<NavbarProps> = ({ onQuoteClick, onNavigate }) => {
               </a>
             ))}
             <div className="w-full pt-6 border-t border-gray-100">
-              <button 
+              <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   onQuoteClick();
