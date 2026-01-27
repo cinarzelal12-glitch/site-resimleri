@@ -40,331 +40,241 @@ export interface Project {
   location: string;
   image: string;
   description: string;
-  year: number;
-  area?: number;
-  features: string[];
 }
 
 // Tüm 31 Proje Verisi
 export const ALL_PROJECTS: Project[] = [
   {
     id: 1,
-    title: 'Lüks Rezidans Projesi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Kadıköy, İstanbul',
+    location: 'Küçükçekmece, İstanbul',
     image: `${IMAGE_BASE}proje1.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Kentsel dönüşüm kapsamında yenilenen bölgede prestijli yaşam alanı.',
-    year: 2023,
-    area: 4500,
-    features: ['Akıllı Ev Sistemi', 'Kapalı Otopark', 'Sosyal Tesis Alanı', '7/24 Güvenlik']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Kentsel dönüşüm kapsamında yenilenen bölgede prestijli yaşam alanı.'
   },
   {
     id: 2,
-    title: 'Modern Konut Kompleksi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Üsküdar, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje2.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaz manzaralı konumda lüks yaşam alanı.',
-    year: 2022,
-    area: 6200,
-    features: ['Panoramik Manzara', 'Yüzme Havuzu', 'Fitness Center', 'Çocuk Oyun Alanı']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaz manzaralı konumda lüks yaşam alanı.'
   },
   {
     id: 3,
-    title: 'Tarihi Bina Restorasyonu',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Beyoğlu, İstanbul',
+    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje3.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Tarihi dokuyu koruyarak çağdaş yaşam standardı.',
-    year: 2021,
-    area: 2800,
-    features: ['Tarihi Restorasyon', 'Orijinal Detaylar', 'Modern Altyapı', 'Merkezi Konum']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Tarihi dokuyu koruyarak çağdaş yaşam standardı.'
   },
   {
     id: 4,
-    title: 'Yeşil Vadi Evleri',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Sarıyer, İstanbul',
+    location: 'Bakırköy, İstanbul',
     image: `${IMAGE_BASE}proje4.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe sakin yaşam alanı.',
-    year: 2023,
-    area: 8500,
-    features: ['Geniş Yeşil Alanlar', 'Yürüyüş Parkurları', 'Organik Pazar', 'Pet-Friendly']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe sakin yaşam alanı.'
   },
   {
     id: 5,
-    title: 'Business Plaza',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Maslak, İstanbul',
+    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje5.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. İş merkezi konumunda prestijli ofis alanları.',
-    year: 2022,
-    area: 12000,
-    features: ['A+ Ofis', 'Konferans Salonları', 'Cafeteria', 'Otopark']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. İş merkezi konumunda prestijli ofis alanları.'
   },
   {
     id: 6,
-    title: 'Sahil Rezidans',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Florya, İstanbul',
     image: `${IMAGE_BASE}proje6.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz manzaralı lüks yaşam.',
-    year: 2023,
-    area: 5400,
-    features: ['Deniz Manzarası', 'Plaj Erişimi', 'SPA & Wellness', 'Concierge Hizmeti']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz manzaralı lüks yaşam.'
   },
   {
     id: 7,
-    title: 'Şehir Merkezi Konutları',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Şişli, İstanbul',
+    location: 'küçükçekmece, İstanbul',
     image: `${IMAGE_BASE}proje7.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir merkezinde ulaşım avantajlı konum.',
-    year: 2021,
-    area: 3200,
-    features: ['Metro İstasyonu Yakını', 'Alışveriş Merkezi', 'Okullara Yakın', 'Güvenlikli Kompleks']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir merkezinde ulaşım avantajlı konum.'
   },
   {
     id: 8,
-    title: 'Doğa Villalar',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Zekeriyaköy, İstanbul',
+    location: 'Bayramtepe, İstanbul',
     image: `${IMAGE_BASE}proje8.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe villa yaşamı.',
-    year: 2022,
-    area: 15000,
-    features: ['Müstakil Villalar', 'Özel Bahçe', 'Kapalı Site', 'Spor Tesisleri']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe villa yaşamı.'
   },
   {
     id: 9,
-    title: 'Kentsel Dönüşüm Projesi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Bağcılar, İstanbul',
     image: `${IMAGE_BASE}proje9.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Depreme dayanıklı modern yapı.',
-    year: 2023,
-    area: 7800,
-    features: ['Deprem Yönetmeliği', 'Geniş Balkonlar', 'Merkezi Isıtma', 'Asansör']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Depreme dayanıklı modern yapı.'
   },
   {
     id: 10,
-    title: 'Aile Konutları',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Ataşehir, İstanbul',
+    location: 'küçükçekmece, İstanbul',
     image: `${IMAGE_BASE}proje10.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu modern yaşam alanı.',
-    year: 2022,
-    area: 4200,
-    features: ['Geniş Daireler', 'Çocuk Parkı', 'Market', 'Güvenlikli Giriş']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu modern yaşam alanı.'
   },
   {
     id: 11,
-    title: 'Lüks Villa Kompleksi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Beykoz, İstanbul',
     image: `${IMAGE_BASE}proje11.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaz manzaralı villa yaşamı.',
-    year: 2022,
-    area: 18000,
-    features: ['Özel Havuz', 'Bahçe', 'Deniz Manzarası', 'Özel Güvenlik']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaz manzaralı villa yaşamı.'
   },
   {
     id: 12,
-    title: 'Merkez Ofis Binası',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Levent, İstanbul',
+    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje12.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Prestijli iş merkezi.',
-    year: 2021,
-    area: 9500,
-    features: ['A+ Ofis', 'Metro Bağlantısı', 'Restoran', 'Toplantı Salonları']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Prestijli iş merkezi.'
   },
   {
     id: 13,
-    title: 'Aile Rezidans Projesi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Bahçeşehir, İstanbul',
     image: `${IMAGE_BASE}proje13.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu geniş daireler.',
-    year: 2023,
-    area: 6800,
-    features: ['Geniş Daireler', 'Yeşil Alan', 'Okul Servisi', 'Market']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu geniş daireler.'
   },
   {
     id: 14,
-    title: 'Lüks Konut Sitesi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Bebek, İstanbul',
+    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje14.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Prestijli bölgede lüks yaşam.',
-    year: 2022,
-    area: 4800,
-    features: ['Boğaz Manzarası', 'Concierge', 'SPA', 'Kapalı Havuz']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Prestijli bölgede lüks yaşam.'
   },
   {
     id: 15,
-    title: 'Modern Apartman Kompleksi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Kartal, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje15.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz manzaralı modern yaşam.',
-    year: 2023,
-    area: 7200,
-    features: ['Deniz Manzarası', 'Yüzme Havuzu', 'Tenis Kortu', 'Güvenlik']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz manzaralı modern yaşam.'
   },
   {
     id: 16,
-    title: 'İş Merkezi Projesi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Gayrettepe, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje16.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Modern ofis alanları.',
-    year: 2021,
-    area: 11000,
-    features: ['Akıllı Bina', 'Konferans Merkezi', 'Restoran', 'Vale Hizmeti']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Modern ofis alanları.'
   },
   {
     id: 17,
-    title: 'Tarihi Han Restorasyonu',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Eminönü, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje17.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Osmanlı mimarisi restorasyonu.',
-    year: 2020,
-    area: 3500,
-    features: ['Tarihi Restorasyon', 'Kültür Merkezi', 'Cafe', 'Sanat Galerisi']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Osmanlı mimarisi restorasyonu.'
   },
   {
     id: 18,
-    title: 'Sahil Konutları',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Yeşilköy, İstanbul',
     image: `${IMAGE_BASE}proje18.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz kenarında yaşam.',
-    year: 2022,
-    area: 5600,
-    features: ['Plaja Yakın', 'Deniz Manzarası', 'Fitness', 'Havuz']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz kenarında yaşam.'
   },
   {
     id: 19,
-    title: 'Tower Rezidans',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Mecidiyeköy, İstanbul',
     image: `${IMAGE_BASE}proje19.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Yüksek kule, geniş manzara.',
-    year: 2023,
-    area: 8900,
-    features: ['Panoramik Manzara', 'Sky Lounge', 'Güvenlik', 'Otopark']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Yüksek kule, geniş manzara.'
   },
   {
     id: 20,
-    title: 'Yeşil Bahçe Evleri',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Göktürk, İstanbul',
     image: `${IMAGE_BASE}proje20.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe sakin yaşam.',
-    year: 2022,
-    area: 12500,
-    features: ['Geniş Bahçeler', 'Yürüyüş Yolları', 'Çocuk Parkı', 'Spor Alanları']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe sakin yaşam.'
   },
   {
     id: 21,
     title: 'Merkezi Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Nişantaşı, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje21.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir merkezinde lüks yaşam.',
-    year: 2021,
-    area: 3800,
-    features: ['Merkezi Konum', 'Alışverişe Yakın', 'Güvenlik', 'Vale']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir merkezinde lüks yaşam.'
   },
   {
     id: 22,
-    title: 'Modern Loft Daireler',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Karaköy, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje22.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Endüstriyel tasarım.',
-    year: 2023,
-    area: 2900,
-    features: ['Loft Tasarım', 'Yüksek Tavan', 'Sanat Ortamı', 'Cafeler']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Endüstriyel tasarım.'
   },
   {
     id: 23,
-    title: 'Villa Bahçelievler',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Beykoz, İstanbul',
     image: `${IMAGE_BASE}proje23.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Müstakil villa yaşamı.',
-    year: 2022,
-    area: 16000,
-    features: ['Müstakil Bahçe', 'Havuz', 'Garaj', 'Güvenlik']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Müstakil villa yaşamı.'
   },
   {
     id: 24,
-    title: 'Boğaz Manzaralı Rezidans',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Kanlıca, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje24.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaza nazır lüks yaşam.',
-    year: 2023,
-    area: 5200,
-    features: ['Boğaz Manzarası', 'Özel İskele', 'Güvenlik', 'Concierge']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaza nazır lüks yaşam.'
   },
   {
     id: 25,
-    title: 'Aile Siteleri',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Pendik, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje25.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu site yaşamı.',
-    year: 2022,
-    area: 9200,
-    features: ['Çocuk Alanları', 'Spor Tesisleri', 'Market', 'Okul Servisi']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu site yaşamı.'
   },
   {
     id: 26,
-    title: 'Marina Rezidans',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Ataköy, İstanbul',
     image: `${IMAGE_BASE}proje26.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Marina kenarında lüks yaşam.',
-    year: 2023,
-    area: 6400,
-    features: ['Marina Manzarası', 'Yat Bağlama', 'Restaurant', 'SPA']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Marina kenarında lüks yaşam.'
   },
   {
     id: 27,
-    title: 'Tepede Villa Projesi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Çamlıca, İstanbul',
+    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje27.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir manzaralı villalar.',
-    year: 2021,
-    area: 14000,
-    features: ['Şehir Manzarası', 'Geniş Bahçe', 'Havuz', 'Kapalı Site']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir manzaralı villalar.'
   },
   {
     id: 28,
-    title: 'Sahil Apartmanları',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Moda, İstanbul',
+    location: 'esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje28.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz kenarında konfor.',
-    year: 2022,
-    area: 4100,
-    features: ['Deniz Manzarası', 'Sahil Yolu', 'Cafeler', 'Parklar']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz kenarında konfor.'
   },
   {
     id: 29,
-    title: 'Kültür Merkezi Restorasyonu',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
     location: 'Haliç, İstanbul',
     image: `${IMAGE_BASE}proje29.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Tarihi bina yenileme.',
-    year: 2020,
-    area: 5800,
-    features: ['Tarihi Doku', 'Kültür Etkinlikleri', 'Cafe', 'Sanat Galerisi']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Tarihi bina yenileme.'
   },
   {
     id: 30,
@@ -372,10 +282,7 @@ export const ALL_PROJECTS: Project[] = [
     category: 'Tamamlanmış Projemiz',
     location: 'Başakşehir, İstanbul',
     image: `${IMAGE_BASE}proje30.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Modern şehir yaşamı.',
-    year: 2023,
-    area: 7600,
-    features: ['Metro Yakını', 'AVM', 'Parklar', 'Güvenlik']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Modern şehir yaşamı.'
   },
   {
     id: 31,
@@ -383,10 +290,7 @@ export const ALL_PROJECTS: Project[] = [
     category: 'Tamamlanmış Projemiz',
     location: 'Arnavutköy, İstanbul',
     image: `${IMAGE_BASE}proje31.jpg`,
-    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Stratejik konum.',
-    year: 2022,
-    area: 25000,
-    features: ['Havalimanı Yakını', 'Depo Alanları', 'Ofisler', 'Güvenlik']
+    description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Stratejik konum.'
   },
 ];
 

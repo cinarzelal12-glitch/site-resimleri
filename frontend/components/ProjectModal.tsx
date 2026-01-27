@@ -84,41 +84,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
 
                     {/* Project Details */}
                     <div className="p-8 md:p-12">
-                        {/* Stats */}
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8 pb-8 border-b border-gray-100">
-                            <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-xl bg-surface flex items-center justify-center shrink-0">
-                                    <span className="material-symbols-outlined text-accent text-[24px]">calendar_month</span>
-                                </div>
-                                <div>
-                                    <div className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Tamamlanma</div>
-                                    <div className="text-primary font-bold text-lg">{project.year}</div>
-                                </div>
-                            </div>
-
-                            {project.area && (
-                                <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-xl bg-surface flex items-center justify-center shrink-0">
-                                        <span className="material-symbols-outlined text-accent text-[24px]">square_foot</span>
-                                    </div>
-                                    <div>
-                                        <div className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Alan</div>
-                                        <div className="text-primary font-bold text-lg">{project.area.toLocaleString('tr-TR')} m²</div>
-                                    </div>
-                                </div>
-                            )}
-
-                            <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-xl bg-surface flex items-center justify-center shrink-0">
-                                    <span className="material-symbols-outlined text-accent text-[24px]">category</span>
-                                </div>
-                                <div>
-                                    <div className="text-xs text-gray-500 uppercase tracking-wide font-semibold">Kategori</div>
-                                    <div className="text-primary font-bold text-lg">{project.category}</div>
-                                </div>
-                            </div>
-                        </div>
-
                         {/* Description */}
                         <div className="mb-8">
                             <h3 className="text-2xl font-bold text-primary mb-4">Proje Hakkında</h3>
@@ -126,24 +91,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
                                 {project.description}
                             </p>
                         </div>
-
-                        {/* Features */}
-                        {project.features && project.features.length > 0 && (
-                            <div>
-                                <h3 className="text-2xl font-bold text-primary mb-4">Özellikler</h3>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                                    {project.features.map((feature, index) => (
-                                        <div
-                                            key={index}
-                                            className="flex items-center gap-3 bg-surface px-4 py-3 rounded-lg"
-                                        >
-                                            <span className="material-symbols-outlined text-accent text-[20px]">check_circle</span>
-                                            <span className="text-gray-700 font-medium">{feature}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        )}
                     </div>
                 </div>
             </div>
