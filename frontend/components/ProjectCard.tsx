@@ -39,13 +39,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick, className =
                     <div className="text-accent text-sm font-bold uppercase tracking-wider mb-1">
                         {project.category}
                     </div>
-                    <h3 className="text-white text-xl font-bold mb-1">
+                    <h3 className="text-white text-xl font-bold">
                         {project.title}
                     </h3>
-                    <p className="text-gray-300 text-sm flex items-center gap-1">
-                        <span className="material-symbols-outlined text-[16px]">location_on</span>
-                        {project.location}
-                    </p>
                 </div>
             </div>
         </article>

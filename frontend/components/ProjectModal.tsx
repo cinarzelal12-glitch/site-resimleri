@@ -72,13 +72,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ isOpen, onClose, project })
                                 <span className="w-8 h-[2px] bg-accent"></span>
                                 {project.category}
                             </div>
-                            <h2 className="text-white text-3xl md:text-4xl font-bold mb-2">
+                            <h2 className="text-white text-3xl md:text-4xl font-bold">
                                 {project.title}
                             </h2>
-                            <p className="text-gray-200 flex items-center gap-1 text-lg">
-                                <span className="material-symbols-outlined text-[20px]">location_on</span>
-                                {project.location}
-                            </p>
                         </div>
                     </div>
 

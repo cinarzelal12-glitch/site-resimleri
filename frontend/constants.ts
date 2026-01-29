@@ -37,7 +37,6 @@ export interface Project {
   id: number;
   title: string;
   category: string;
-  location: string;
   image: string;
   description: string;
 }
@@ -48,7 +47,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 1,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Küçükçekmece, İstanbul',
     image: `${IMAGE_BASE}proje1.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Kentsel dönüşüm kapsamında yenilenen bölgede prestijli yaşam alanı.'
   },
@@ -56,7 +54,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 2,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje2.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaz manzaralı konumda lüks yaşam alanı.'
   },
@@ -64,7 +61,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 3,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje3.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Tarihi dokuyu koruyarak çağdaş yaşam standardı.'
   },
@@ -72,7 +68,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 4,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Bakırköy, İstanbul',
     image: `${IMAGE_BASE}proje4.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe sakin yaşam alanı.'
   },
@@ -80,7 +75,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 5,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje5.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. İş merkezi konumunda prestijli ofis alanları.'
   },
@@ -88,7 +82,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 6,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Florya, İstanbul',
     image: `${IMAGE_BASE}proje6.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz manzaralı lüks yaşam.'
   },
@@ -96,7 +89,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 7,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'küçükçekmece, İstanbul',
     image: `${IMAGE_BASE}proje7.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir merkezinde ulaşım avantajlı konum.'
   },
@@ -104,7 +96,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 8,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Bayramtepe, İstanbul',
     image: `${IMAGE_BASE}proje8.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe villa yaşamı.'
   },
@@ -112,7 +103,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 9,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Bağcılar, İstanbul',
     image: `${IMAGE_BASE}proje9.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Depreme dayanıklı modern yapı.'
   },
@@ -120,7 +110,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 10,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'küçükçekmece, İstanbul',
     image: `${IMAGE_BASE}proje10.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu modern yaşam alanı.'
   },
@@ -128,7 +117,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 11,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Beykoz, İstanbul',
     image: `${IMAGE_BASE}proje11.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaz manzaralı villa yaşamı.'
   },
@@ -136,7 +124,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 12,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje12.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Prestijli iş merkezi.'
   },
@@ -144,7 +131,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 13,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Bahçeşehir, İstanbul',
     image: `${IMAGE_BASE}proje13.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu geniş daireler.'
   },
@@ -152,7 +138,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 14,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Avcılar, İstanbul',
     image: `${IMAGE_BASE}proje14.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Prestijli bölgede lüks yaşam.'
   },
@@ -160,7 +145,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 15,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje15.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz manzaralı modern yaşam.'
   },
@@ -168,7 +152,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 16,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje16.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Modern ofis alanları.'
   },
@@ -176,7 +159,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 17,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje17.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Osmanlı mimarisi restorasyonu.'
   },
@@ -184,7 +166,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 18,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Yeşilköy, İstanbul',
     image: `${IMAGE_BASE}proje18.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz kenarında yaşam.'
   },
@@ -192,7 +173,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 19,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Mecidiyeköy, İstanbul',
     image: `${IMAGE_BASE}proje19.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Yüksek kule, geniş manzara.'
   },
@@ -200,7 +180,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 20,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Göktürk, İstanbul',
     image: `${IMAGE_BASE}proje20.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Doğayla iç içe sakin yaşam.'
   },
@@ -208,7 +187,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 21,
     title: 'Merkezi Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje21.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir merkezinde lüks yaşam.'
   },
@@ -216,7 +194,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 22,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje22.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Endüstriyel tasarım.'
   },
@@ -224,7 +201,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 23,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Beykoz, İstanbul',
     image: `${IMAGE_BASE}proje23.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Müstakil villa yaşamı.'
   },
@@ -232,7 +208,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 24,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje24.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Boğaza nazır lüks yaşam.'
   },
@@ -240,7 +215,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 25,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje25.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Aile dostu site yaşamı.'
   },
@@ -248,7 +222,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 26,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Ataköy, İstanbul',
     image: `${IMAGE_BASE}proje26.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Marina kenarında lüks yaşam.'
   },
@@ -256,7 +229,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 27,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje27.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Şehir manzaralı villalar.'
   },
@@ -264,7 +236,6 @@ export const ALL_PROJECTS: Project[] = [
     id: 28,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'esenyurt, İstanbul',
     image: `${IMAGE_BASE}proje28.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Deniz kenarında konfor.'
   },
@@ -272,23 +243,20 @@ export const ALL_PROJECTS: Project[] = [
     id: 29,
     title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Haliç, İstanbul',
     image: `${IMAGE_BASE}proje29.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Tarihi bina yenileme.'
   },
   {
     id: 30,
-    title: 'Şehir Konutları',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Başakşehir, İstanbul',
     image: `${IMAGE_BASE}proje30.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Modern şehir yaşamı.'
   },
   {
     id: 31,
-    title: 'Havalimanı Lojistik Merkezi',
+    title: 'Modern Konut Projesi',
     category: 'Tamamlanmış Projemiz',
-    location: 'Arnavutköy, İstanbul',
     image: `${IMAGE_BASE}proje31.jpg`,
     description: 'İnce işçiliğin ve mimari zekanın buluştuğu bu proje sayesinde güvende yaşayacağınız modern bir konut sunduk sizlere. Stratejik konum.'
   },
